@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+*{
+    --slate-900: #1F314F;
+    --slate-500: #68778D;
+    --slate-300: #D5E1EF;
+    --white: #FFF;
+    font-family: 'Outfit', sans-serif;
+    --space-500: 40px;
+    --space-300: 24px;
+    --space-200: 16px;
+}
+
+body{
+    width: calc(100dvw - 16px);
+    height: calc(100dvh - 16px);
+    background-color: var(--slate-300);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-200);
+}
+
+.outfit-regular{
+    font-size: 15px;
+    line-height: 140%;
+    letter-spacing: 0.2px;
+    font-weight: 400;
+}
+
+.outfit-bold{
+    font-size: 22px;
+    line-height: 120%;
+    letter-spacing: 0;
+    font-weight: 700;
+}
+
+.qr-card-container{
+    width: 320px;
+    padding-bottom: var(--space-500);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-300);
+    text-align: center;
+    background-color: var(--white);
+    border-radius: 20px;
+
+    img{
+        width: 288px;
+        height: 288px;
+        border-radius: 10px;
+        margin: var(--space-200);
+        margin-bottom: 0;
+    }
+
+    .qr-card-content{
+        display: flex;
+        flex-direction: column;
+        padding: 0 var(--space-200);
+        gap: var(--space-200);
+
+        .qr-card-title{
+            color: var(--slate-900);
+        }
+
+        .qr-card-body{
+            color: var(--slate-500)
+        }
+    }
+}
